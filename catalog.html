@@ -22,7 +22,7 @@
 						<img src="images/search.svg" Alt="Поиск">
 					</div>
 				</div>
-				<div class="header__item-right">
+				<nav class="header__item-right">
 					<div class="menu-hamburger">
 						<img src="images/hamburger.svg" Alt="Меню">
 					</div>
@@ -33,107 +33,75 @@
 						<img src="images/cart.svg" Alt="Корзина">
 					</div>
 					<div class="cart-count-products"></div>
-				</div>
+				</nav>
 			</div>
 		</div>
 	</header>
-	<section class="promo">
-		<div class="promo__container">
-			<div class="promo__left">
-				<img class="promo__photo" src="images/promo.png" alt="Промо">
-			</div>
-			<div class="promo__right">
-				<div class="promo__content">
-					<h1 class="promo__heading">THE BRAND</h1>
-					<p class="promo__info">OF LUXERIOUS <span class="select">FASHION</span></p>
-				</div>
-			</div>
+	<section class="breadcrumbs center">
+		<div class="breadcrumbs__page">
+			NEW ARRIVALS
 		</div>
-		<!-- ! здесь будет меню-->
-		<aside class="promo__menu-bg">
-			<div class="promo__right-menu">
-				<button class="promo__right-menu-close">
-					<img src="/images/close.svg" alt="закрыть меню">
-				</button>
-				<h4 class="promo__right-menu-title">MENU</h4>
-				<ul class="promo__right-menu-list">
-					<li class="promo__right-menu-list-item">
-						<span class="promo__right-menu-subtitle">MAN</span>
-						<ul class="promo__right-submenu">
-							<li>Accessories</li>
-							<li>Bags</li>
-							<li>Denim</li>
-							<li>T-Shirts</li>
+		<!-- ! переделать в список-->
+		<nav class="breadcrumbs__chain">
+			HOME&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;MEN&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;<span
+				class="breadcrumbs__current">NEW ARRIVALS</span>
+		</nav>
+	</section>
+	<div class="catalogs center">
+		<div class="catalog__filter">
+			<div class="catalog__filter-left">
+				<p class="catalog__filter-text">FILTER</p>
+				<img src="/images/catalog/filter-icon.svg" alt="Фильтр">
+			</div>
+			<div class="catalog__filter-center">
+				<ul class="catalog__filter-center-list">
+					<details class="catalog__filter-center-item">
+						<summary>TRENDING NOW<img src="/images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
+						<ul class="catalog__filter-details">
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">XS</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">S</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">M</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">L</li>
 						</ul>
-					</li>
-					<li class="promo__right-menu-list-item">
-						<span class="promo__right-menu-subtitle">WOMAN</span>
-						<ul class="promo__right-submenu">
-							<li>Accessories</li>
-							<li>Jackets & Coats</li>
-							<li>Polos</li>
-							<li>T-Shirts</li>
-							<li>Shirts</li>
+					</details>
+					<details class="catalog__filter-center-item">
+						<summary>SIZE <img src="/images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
+						<ul class="catalog__filter-details">
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">XS</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">S</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">M</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">L</li>
 						</ul>
-					</li>
-					<li class="promo__right-menu-list-item">
-						<span class="promo__right-menu-subtitle">KIDS</span>
-						<ul class="promo__right-submenu">
-							<li>Accessories</li>
-							<li>Jackets & Coats</li>
-							<li>Polos</li>
-							<li>T-Shirts</li>
-							<li>Shirts</li>
-							<li>Bags</li>
+					</details>
+					<details class="catalog__filter-center-item">
+						<summary>PRICE <img src="/images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
+						<ul class="catalog__filter-details">
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">XS</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">S</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">M</li>
+							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
+									type="checkbox">L</li>
 						</ul>
-					</li>
+					</details>
 				</ul>
 			</div>
-			</ф>
-	</section>
-	<section class="menu container">
-		<div class="menu__top">
-			<div class="menu__item">
-				<img class="menu__img" src="images/for_women.png" alt="Для женщин">
-				<div class="menu__text">
-					<p class="menu__p">30% OFF</p>
-					<h3 class="menu__heading">FOR WOMEN</h3>
-				</div>
-			</div>
-			<div class="menu__item">
-				<img class="menu__img" src="images/for_men.png" alt="Для мужчин">
-				<div class="menu__text">
-					<p class="menu__p">HOT DEAL</p>
-					<h3 class="menu__heading">FOR MEN</h3>
-				</div>
-			</div>
-			<div class="menu__item">
-				<img class="menu__img" src="images/for_kids.png" alt="Для детей">
-				<div class="menu__text">
-					<p class="menu__p">NEW ARRIVALS</p>
-					<h3 class="menu__heading">FOR KIDS</h3>
-				</div>
-			</div>
 		</div>
-		<div class="menu__bottom">
-			<div class="menu__item">
-				<img class="menu__img" src="images/accesories.png" alt="Аксессуары">
-				<div class="menu__text">
-					<p class="menu__p">LUXIROUS & TRENDY</p>
-					<h3 class="menu__heading">ACCESORIES</h3>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="catalogs center">
-		<header class="catalog__header">
-			<h2 class="catalog__heading">Fetured Items</h2>
-			<p class="catalog__subtitle">Shop for items based on what we featured in this week</p>
-		</header>
+
 		<div class="catalog__items">
 			<div class="catalog__item">
 				<div class="catalog__image-container">
-					<img src="images/card-1.png" alt="Продукт" class="catalog__img" draggable="false">
+					<img src="images/catalog/card-1.png" alt="Продукт" class="catalog__img" draggable="false">
 					<div class="catalog__add-cart">
 						<div class="catalog__add-cart-container">
 							<img src="images/add_to_cart.svg" alt="Add to cart">
@@ -150,7 +118,7 @@
 			</div>
 			<div class="catalog__item">
 				<div class="catalog__image-container">
-					<img src="images/card-2.png" alt="Продукт" class="catalog__img">
+					<img src="images/catalog/card-2.png" alt="Продукт" class="catalog__img">
 					<div class="catalog__add-cart">
 						<div class="catalog__add-cart-container">
 							<img src="images/add_to_cart.svg" alt="Add to cart">
@@ -167,7 +135,7 @@
 			</div>
 			<div class="catalog__item">
 				<div class="catalog__image-container">
-					<img src="images/card-3.png" alt="Продукт" class="catalog__img">
+					<img src="images/catalog/card-3.png" alt="Продукт" class="catalog__img">
 					<div class="catalog__add-cart">
 						<div class="catalog__add-cart-container">
 							<img src="images/add_to_cart.svg" alt="Add to cart">
@@ -184,7 +152,7 @@
 			</div>
 			<div class="catalog__item">
 				<div class="catalog__image-container">
-					<img src="images/card-4.png" alt="Продукт" class="catalog__img">
+					<img src="images/catalog/card-4.png" alt="Продукт" class="catalog__img">
 					<div class="catalog__add-cart">
 						<div class="catalog__add-cart-container">
 							<img src="images/add_to_cart.svg" alt="Add to cart">
@@ -201,7 +169,7 @@
 			</div>
 			<div class="catalog__item">
 				<div class="catalog__image-container">
-					<img src="images/card-5.png" alt="Продукт" class="catalog__img">
+					<img src="images/catalog/card-5.png" alt="Продукт" class="catalog__img">
 					<div class="catalog__add-cart">
 						<div class="catalog__add-cart-container">
 							<img src="images/add_to_cart.svg" alt="Add to cart">
@@ -218,7 +186,58 @@
 			</div>
 			<div class="catalog__item">
 				<div class="catalog__image-container">
-					<img src="images/card-6.png" alt="Продукт" class="catalog__img">
+					<img src="images/catalog/card-6.png" alt="Продукт" class="catalog__img">
+					<div class="catalog__add-cart">
+						<div class="catalog__add-cart-container">
+							<img src="images/add_to_cart.svg" alt="Add to cart">
+							<p class="catalog__add-cart-text">Add to cart</p>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__about">
+					<h4 class="catalog__title">ELLERY X M'O CAPSULE</h4>
+					<p class="catalog__describe">Known for her sculptural takes on traditional tailoring, Australian arbiter
+						of cool Kym Ellery teams up with Moda Operandi.</p>
+					<p class="catalog__price">52.00</p>
+				</div>
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__image-container">
+					<img src="images/catalog/card-7.png" alt="Продукт" class="catalog__img">
+					<div class="catalog__add-cart">
+						<div class="catalog__add-cart-container">
+							<img src="images/add_to_cart.svg" alt="Add to cart">
+							<p class="catalog__add-cart-text">Add to cart</p>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__about">
+					<h4 class="catalog__title">ELLERY X M'O CAPSULE</h4>
+					<p class="catalog__describe">Known for her sculptural takes on traditional tailoring, Australian arbiter
+						of cool Kym Ellery teams up with Moda Operandi.</p>
+					<p class="catalog__price">52.00</p>
+				</div>
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__image-container">
+					<img src="images/catalog/card-8.png" alt="Продукт" class="catalog__img">
+					<div class="catalog__add-cart">
+						<div class="catalog__add-cart-container">
+							<img src="images/add_to_cart.svg" alt="Add to cart">
+							<p class="catalog__add-cart-text">Add to cart</p>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__about">
+					<h4 class="catalog__title">ELLERY X M'O CAPSULE</h4>
+					<p class="catalog__describe">Known for her sculptural takes on traditional tailoring, Australian arbiter
+						of cool Kym Ellery teams up with Moda Operandi.</p>
+					<p class="catalog__price">52.00</p>
+				</div>
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__image-container">
+					<img src="images/catalog/card-9.png" alt="Продукт" class="catalog__img">
 					<div class="catalog__add-cart">
 						<div class="catalog__add-cart-container">
 							<img src="images/add_to_cart.svg" alt="Add to cart">
@@ -234,8 +253,26 @@
 				</div>
 			</div>
 		</div>
-		<button class="catalog__button">Browse All Product</button>
-	</section>
+
+		<div class="catalog__paging">
+			<div class="catalog__paging-btn" id="prev">
+				<img src="/images/catalog/btn-prev.svg" alt="Предыдущая страница">
+			</div>
+			<ul class="catalog__paging-list">
+				<li class="catalog__paging-item active"><a href="#">1</a></li>
+				<li class="catalog__paging-item"><a href="#">2</a></li>
+				<li class="catalog__paging-item"><a href="#">3</a></li>
+				<li class="catalog__paging-item"><a href="#">4</a></li>
+				<li class="catalog__paging-item"><a href="#">5</a></li>
+				<li class="catalog__paging-item"><a href="#">6</a></li>
+				<li class="catalog__paging-item-skip">.....</li>
+				<li class="catalog__paging-item"><a href="#">20</a></li>
+			</ul>
+			<div class="catalog__paging-btn-next" id="next">
+				<img src="/images/catalog/btn-next.svg" alt="Следующая страница">
+			</div>
+		</div>
+	</div>
 	<section class="advantages center">
 		<article class="advantage__item">
 			<img src="images/free_delivery.svg" alt="Бесплатная доставка">
@@ -262,14 +299,14 @@
 			<p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
 				condimentum“</p>
 		</figure>
-		<section class="subscribe__right">
+		<div class="subscribe__right">
 			<h4 class="subscribe__heading">SUBSCRIBE</h4>
 			<p class="subscribe__subheading">FOR OUR NEWLETTER AND PROMOTION</p>
 			<form class="subscribe__input-form" action="#" method="POST">
 				<input type="email" placeholder="Enter your email">
 				<button class="subscribe__button">Subscribe</button>
 			</form>
-		</section>
+		</div>
 	</section>
 	<footer class="center footer">
 		<div class="copyright">© 2021 Brand All Rights Reserved.</div>
