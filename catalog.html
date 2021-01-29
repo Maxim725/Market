@@ -15,25 +15,25 @@
 		<div class="container">
 			<div class="header__items">
 				<div class="header__item-left">
-					<div class="logo">
+					<a href="index.html" class="logo">
 						<img src="images/logo.svg" Alt="Лого">
-					</div>
-					<div class="search">
+					</a>
+					<a href="#" class="search">
 						<img src="images/search.svg" Alt="Поиск">
-					</div>
+					</a>
 				</div>
-				<nav class="header__item-right">
-					<div class="menu-hamburger">
+				<div class="header__item-right">
+					<a href="#" class="menu-hamburger">
 						<img src="images/hamburger.svg" Alt="Меню">
-					</div>
-					<div class="icon-accaount">
+					</a>
+					<a href="#" class="icon-accaount">
 						<img src="images/account.svg" Alt="Аккаунт">
-					</div>
-					<div class="cart">
+					</a>
+					<a href="#" class="cart">
 						<img src="images/cart.svg" Alt="Корзина">
-					</div>
+					</a>
 					<div class="cart-count-products"></div>
-				</nav>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -49,14 +49,66 @@
 	</section>
 	<div class="catalogs center">
 		<div class="catalog__filter">
-			<div class="catalog__filter-left">
-				<p class="catalog__filter-text">FILTER</p>
-				<img src="/images/catalog/filter-icon.svg" alt="Фильтр">
-			</div>
+			<details class="catalog__filter-left">
+				<summary>
+					<p class="catalog__filter-text">FILTER</p>
+					<img src="images/catalog/filter-icon.svg" alt="Фильтр">
+				</summary>
+				<div class="catalog__filter-sublists">
+					<details class="catalog__filter-sublist">
+						<summary class="catalog__filter-sublist-title">CATEGORY</summary>
+						<ul class="catalog__filter-sublist-list">
+							<li class="catalog__filter-sublist-item"><a href="#">Accessories</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Bags</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Denim</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Hoodies & Sweatshirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Jackets & Coats</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Polos</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Shirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Shoes</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Sweaters & Knits</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">T-Shirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Tanks</a></li>
+						</ul>
+					</details>
+					<details class="catalog__filter-sublist">
+						<summary class="catalog__filter-sublist-title">BRAND</summary>
+						<ul class="catalog__filter-sublist-list">
+							<li class="catalog__filter-sublist-item"><a href="#">Accessories</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Bags</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Denim</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Hoodies & Sweatshirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Jackets & Coats</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Polos</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Shirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Shoes</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Sweaters & Knits</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">T-Shirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Tanks</a></li>
+						</ul>
+					</details>
+					<details class="catalog__filter-sublist">
+						<summary class="catalog__filter-sublist-title">DESIGNER</summary>
+						<ul class="catalog__filter-sublist-list">
+							<li class="catalog__filter-sublist-item"><a href="#">Accessories</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Bags</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Denim</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Hoodies & Sweatshirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Jackets & Coats</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Polos</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Shirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Shoes</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Sweaters & Knits</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">T-Shirts</a></li>
+							<li class="catalog__filter-sublist-item"><a href="#">Tanks</a></li>
+						</ul>
+					</details>
+				</div>
+			</details>
 			<div class="catalog__filter-center">
 				<ul class="catalog__filter-center-list">
 					<details class="catalog__filter-center-item">
-						<summary>TRENDING NOW<img src="/images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
+						<summary>TRENDING NOW<img src="images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
 						<ul class="catalog__filter-details">
 							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
 									type="checkbox">XS</li>
@@ -69,7 +121,7 @@
 						</ul>
 					</details>
 					<details class="catalog__filter-center-item">
-						<summary>SIZE <img src="/images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
+						<summary>SIZE <img src="images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
 						<ul class="catalog__filter-details">
 							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
 									type="checkbox">XS</li>
@@ -82,7 +134,7 @@
 						</ul>
 					</details>
 					<details class="catalog__filter-center-item">
-						<summary>PRICE <img src="/images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
+						<summary>PRICE <img src="images/catalog/arrow-accordion.svg" alt="стрелка вниз"></summary>
 						<ul class="catalog__filter-details">
 							<li class="catalog__filter-details-item"><input class="catalog__filter-details-checkbox"
 									type="checkbox">XS</li>
@@ -299,19 +351,19 @@
 			<p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
 				condimentum“</p>
 		</figure>
-		<div class="subscribe__right">
+		<section class="subscribe__right">
 			<h4 class="subscribe__heading">SUBSCRIBE</h4>
 			<p class="subscribe__subheading">FOR OUR NEWLETTER AND PROMOTION</p>
 			<form class="subscribe__input-form" action="#" method="POST">
 				<input type="email" placeholder="Enter your email">
-				<button class="subscribe__button">Subscribe</button>
+				<button class="subscribe__button" type="submit">Subscribe</button>
 			</form>
-		</div>
+		</section>
 	</section>
 	<footer class="center footer">
 		<div class="copyright">© 2021 Brand All Rights Reserved.</div>
 		<div class="contacts">
-			<div class="contact__item">
+			<a href="#" class="contact__item">
 				<svg class="icon__facebook" width="32" height="32" viewBox="0 0 32 32" fill="none"
 					xmlns="http://www.w3.org/2000/svg">
 					<path d="M31.4506 0H0V32H31.4506V0Z" fill="white" />
@@ -319,8 +371,8 @@
 						d="M19.0884 16.28L19.5069 13.616H16.8902V11.8873C16.8902 11.1585 17.2557 10.4481 18.4277 10.4481H19.6172V8.17997C19.6172 8.17997 18.5377 8 17.5056 8C15.3507 8 13.9422 9.27593 13.9422 11.5857V13.616H11.5469V16.28H13.9422V22.72H16.8902V16.28H19.0884Z"
 						fill="black" />
 				</svg>
-			</div>
-			<div class="contact__item">
+			</a>
+			<a href="#" class="contact__item">
 				<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M32.1889 0H0.738281V32H32.1889V0Z" fill="white" />
 					<g clip-path="url(#clip0)">
@@ -334,8 +386,8 @@
 						</clipPath>
 					</defs>
 				</svg>
-			</div>
-			<div class="contact__item">
+			</a>
+			<a href="#" class="contact__item">
 				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M31.9252 0H0.474609V32H31.9252V0Z" fill="white" />
 					<g clip-path="url(#clip0)">
@@ -349,8 +401,8 @@
 						</clipPath>
 					</defs>
 				</svg>
-			</div>
-			<div class="contact__item">
+			</a>
+			<a href="#" class="contact__item">
 				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M31.6635 0H0.212891V32H31.6635V0Z" fill="white" />
 					<g clip-path="url(#clip0)">
@@ -364,7 +416,7 @@
 						</clipPath>
 					</defs>
 				</svg>
-			</div>
+			</a>
 		</div>
 	</footer>
 </body>
