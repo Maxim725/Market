@@ -1,0 +1,118 @@
+.registration {
+	padding-top: 64px;
+	padding-bottom: 96px;
+	display: flex;
+	justify-content: space-between;
+
+	&__input {
+		max-width: 360px;
+		&-form {
+			margin-bottom: 20px;
+			border: 1px solid #a4a4a4;
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 16px;
+			color: #b1b1b1;
+			padding: 13px 17px;
+		}
+
+		&-gender {
+			margin-top: 11px;
+			margin-bottom: 31px;
+			display: flex;
+
+			& > label {
+				display: flex;
+				margin-left: 0;
+				justify-content: start;
+				align-items: center;
+				font-weight: 400;
+				font-size: 11px;
+				line-height: 13px;
+				color: #000000;
+			}
+
+			& > label:not(:first-child) {
+				margin-left: 20px;
+			}
+
+			& > label > input {
+				width: 17px;
+				height: 17px;
+				border: 1px solid #a4a4a4;
+				box-sizing: border-box;
+			}
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		&-heading-mini {
+			margin-block-start: 0;
+			margin-block-end: 0;
+			margin-bottom: 20px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 19px;
+			color: #222222;
+		}
+
+		&-danger-text {
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 16px;
+			color: #b1b1b1;
+			margin-bottom: 39px;
+		}
+
+		&-button {
+			width: 167px;
+			height: 50px;
+			background-color: #f16d7f;
+			font-size: 14px;
+			line-height: 17px;
+			color: #ffffff;
+			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			> img {
+				display: inline-block;
+				margin-left: 20px;
+			}
+		}
+	}
+	&__benefit {
+		max-width: 652px;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 29px;
+		color: #000000;
+
+		&-heading {
+			font-weight: 300;
+			margin-bottom: 22px;
+		}
+
+		&-list {
+			padding-inline-start: 0;
+		}
+
+		&-marker {
+			display: inline-block;
+			margin-right: 23px;
+			width: 17px;
+			height: 17px;
+		}
+
+		&-item:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+	&__text {
+		margin-bottom: 22px;
+	}
+}

@@ -1,0 +1,31 @@
+.advantages {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--bg-color-dark);
+}
+
+.advantage {
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 104px;
+		padding-bottom: 104px;
+	}
+
+	&__title {
+		font-size: 19.96px;
+		line-height: 24px;
+		color: #fbfbfb;
+		padding-top: 24px;
+		padding-bottom: 16px;
+	}
+
+	&__discribe {
+		font-weight: 300;
+		font-size: 13.972px;
+		line-height: 17px;
+		text-align: center;
+		color: #fbfbfb;
+	}
+}

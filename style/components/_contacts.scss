@@ -1,0 +1,29 @@
+.contacts {
+	display: flex;
+}
+
+.contact {
+	&__item:not(:last-child) {
+		display: block;
+		margin-right: 8px;
+	}
+
+	&__item > svg {
+		width: 100%;
+	}
+
+	&__item > svg:hover > g > path {
+		fill: #ffffff;
+	}
+
+	&__item > svg:hover > path {
+		fill: #f16d7f;
+	}
+}
+
+.icon__facebook:hover > path:first-child {
+	fill: #f16d7f;
+}
+.icon__facebook:hover > path:last-child {
+	fill: #ffffff;
+}

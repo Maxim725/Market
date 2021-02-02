@@ -1,0 +1,117 @@
+.promo {
+	background-color: #f1e4e6;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-left: calc(50% - 800px);
+	padding-right: calc(50% - 800px);
+
+	&__container {
+		display: flex;
+		width: 100%;
+	}
+
+	&__left {
+		width: 50%;
+	}
+
+	&__photo {
+		width: 100%;
+		display: flex;
+	}
+
+	&__right {
+		width: 50%;
+	}
+
+	&__content {
+		margin-top: 40%;
+		border-left: 12px solid #f16d7f;
+		padding-left: 16px;
+	}
+
+	&__heading {
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 58px;
+
+		color: #222222;
+	}
+
+	&__info {
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 38px;
+
+		color: #222222;
+	}
+
+	&__menu-bg {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		display: none;
+		/* overflow: hidden;
+		overflow-y: hidden; */
+	}
+
+	&__right-menu {
+		position: inherit;
+		top: 0;
+		right: 0;
+		min-width: 15%;
+		height: 100%;
+		background-color: #ffffff;
+		padding-top: 40px;
+		padding-left: 32px;
+		box-sizing: border-box;
+		/* overflow: scroll;
+		overflow-y: hidden; */
+	}
+
+	&__right-menu-close {
+		border: 0;
+		background-color: #ffffff;
+		float: right;
+		margin-top: 16px;
+		margin-right: 16px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&__right-menu-title {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		padding-bottom: 24px;
+	}
+
+	&__right-menu-list {
+		/* padding-top: 12px; */
+		padding-left: 0;
+	}
+	&__right-menu-subtitle {
+		padding-top: 24px;
+		font-size: 14px;
+		line-height: 17px;
+		color: #f16d7f;
+	}
+
+	&__right-submenu > li {
+		margin-top: 12px;
+	}
+
+	&__right-submenu {
+		padding-left: 24px;
+		padding-bottom: 20px;
+	}
+
+	&:hover > div + .promo__menu-bg {
+		display: flex;
+	}
+}

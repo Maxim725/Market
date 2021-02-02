@@ -1,0 +1,82 @@
+:root {
+	--bg-color-dark: #222222;
+	--bg-color-light: #ffffff;
+}
+
+@import "components/default-styles";
+@import "components/header";
+@import "components/promo";
+@import "components/menu";
+@import "components/catalog";
+@import "components/advantages";
+@import "components/subscribe";
+@import "components/contacts";
+@import "components/breadcrumbs";
+@import "components/product";
+@import "components/cart";
+@import "components/registration";
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.center {
+	padding-left: calc(50% - 570px);
+	padding-right: calc(50% - 570px);
+}
+
+.logo {
+	display: block;
+	margin-right: 41px;
+}
+
+.search {
+	display: block;
+}
+
+.menu-hamburger,
+.icon-accaount {
+	display: block;
+	margin-right: 33px;
+}
+
+.cart {
+	display: block;
+}
+
+.select {
+	color: #f16d7f;
+}
+
+.footer {
+	height: 79px;
+	background-color: var(--bg-color-dark);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.copyright {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #fbfbfb;
+}
+
+.active {
+	color: #ef5b70;
+}
+
+#prev {
+	margin-right: 16px;
+}
+
+#next {
+	margin-left: 16px;
+}
+/* ! PRODUCT */
+
+.svg-pink {
+	fill: #ef5b70;
+}

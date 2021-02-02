@@ -1,0 +1,155 @@
+.product {
+	position: relative;
+	width: 100%;
+	background-color: #f7f7f7;
+	height: 777px;
+
+	&__show {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__arrow {
+		position: absolute;
+		width: 47px;
+		height: 47px;
+		background: rgba(42, 42, 42, 0.15);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__arrow:hover > .arrow-right > path,
+	&__arrow:hover > .arrow-left > path {
+		fill: #f16d7f;
+	}
+
+	&-card {
+		width: 100%;
+		margin-bottom: 128px;
+
+		&__container {
+			border: 1px solid #eaeaea;
+			padding-top: 64px;
+			padding-bottom: 64px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transform: translateY(-70px);
+			background-color: #ffffff;
+		}
+
+		&__select-options {
+			display: flex;
+			justify-content: space-between;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 17px;
+			color: #6f6e6e;
+			padding-bottom: 48px;
+		}
+
+		&__about {
+			max-width: 555px;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			color: #5e5e5e;
+			padding-bottom: 32px;
+		}
+
+		&__price {
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 29px;
+			color: #ef5b70;
+			padding-bottom: 64px;
+		}
+
+		&__collection {
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 17px;
+			color: #f16d7f;
+		}
+
+		&__hr {
+			margin-top: 12px;
+			margin-bottom: 12px;
+			background: #ef5b70;
+			width: 63px;
+			height: 3px;
+
+			border-style: none;
+			border-width: 0;
+
+			&-grey {
+				width: 70%;
+				border: 1px solid #eaeaea;
+				margin-bottom: 64px;
+			}
+		}
+
+		&__title {
+			text-align: center;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			color: #4d4d4d;
+			padding-bottom: 48px;
+		}
+
+		&__button {
+			width: 212px;
+			height: 48px;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			color: #f26376;
+			background-color: rgba(0, 0, 0, 0);
+			border: 1px solid #ff6a6a;
+			display: flex;
+			align-items: center;
+			padding-left: 24px;
+		}
+		&__add-cart {
+			margin-right: 24px;
+		}
+	}
+
+	&__other {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.products {
+	&__other {
+		display: flex;
+		flex-direction: column;
+
+		&-items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-bottom: 128px;
+		}
+
+		&-item {
+			background: #f8f8f8;
+			max-width: 360px;
+		}
+	}
+}
+
+/* ! стрелочки вправо и влево */
+#left {
+	top: 40%;
+	left: 0;
+}
+
+#right {
+	top: 40%;
+	right: 0;
+}

@@ -1,0 +1,21 @@
+.header {
+	background-color: var(--bg-color-dark);
+	height: 75px;
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 75px;
+	}
+
+	&__item-left {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__item-right {
+		display: flex;
+		align-items: center;
+	}
+}
