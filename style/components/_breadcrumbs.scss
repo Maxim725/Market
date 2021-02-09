@@ -12,14 +12,26 @@
 	}
 
 	&__chain {
-		font-size: 14px;
-		line-height: 17px;
-		/* identical to box height */
+		&-list {
+			display: flex;
+		}
 
-		color: #636363;
+		&-item:not(:last-child):after {
+			margin-right: 10px;
+			margin-left: 10px;
+			content: "/";
+		}
+
+		&-item > a {
+			font-size: 14px;
+			line-height: 17px;
+			color: #636363;
+		}
 	}
 
-	&__current {
+	&__current > a {
 		color: #f16d7f;
 	}
+}
+.breadcrumbs__chain-item {
 }

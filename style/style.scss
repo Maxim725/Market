@@ -80,3 +80,9 @@
 .svg-pink {
 	fill: #ef5b70;
 }
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 24px 32px;
+	}
+}

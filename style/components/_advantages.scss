@@ -29,3 +29,20 @@
 		color: #fbfbfb;
 	}
 }
+
+@media (max-width: 768px) {
+	.advantages {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.advantage {
+		&__item {
+			padding-top: 48px;
+			max-width: 360px;
+		}
+		&__item:last-child {
+			padding-bottom: 64px;
+		}
+	}
+}

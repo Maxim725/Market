@@ -113,6 +113,16 @@
 			align-items: center;
 			padding-left: 24px;
 		}
+		&__button:hover {
+			cursor: pointer;
+			background-color: #ff6a6a;
+			color: #ffffff;
+		}
+
+		&__button:hover .svg-pink {
+			fill: #ffffff;
+		}
+
 		&__add-cart {
 			margin-right: 24px;
 		}
