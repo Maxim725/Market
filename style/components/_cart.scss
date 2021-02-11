@@ -123,16 +123,20 @@
 	&__form {
 		display: flex;
 		flex-direction: column;
+		&-input {
+			display: flex;
+			flex-direction: column;
 
-		& > input[type="text"] {
-			width: 360px;
-			height: 45px;
-			margin-top: 21px;
-			font-size: 13px;
-			line-height: 16px;
-			color: #222222;
-			border: 1px solid #a4a4a4;
-			padding: 16px 12px;
+			& > input[type="text"] {
+				width: 360px;
+				height: 45px;
+				margin-top: 21px;
+				font-size: 13px;
+				line-height: 16px;
+				color: #222222;
+				border: 1px solid #a4a4a4;
+				padding: 16px 12px;
+			}
 		}
 
 		&-price {
@@ -225,7 +229,7 @@
 			font-weight: 300;
 			font-size: 14px;
 			line-height: 17px;
-
+			background-color: #ffffff;
 			color: #000000;
 		}
 
@@ -243,7 +247,7 @@
 			font-weight: 300;
 			font-size: 14px;
 			line-height: 17px;
-
+			background-color: #ffffff;
 			color: #000000;
 		}
 
@@ -264,6 +268,137 @@
 .dark {
 	font-size: 11px;
 	line-height: 13px;
-
 	color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+	.cart {
+		&__container {
+			padding-bottom: 64px;
+		}
+
+		&__content {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__item {
+			&-all {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		&__button {
+			margin-top: 64px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__heading {
+			padding-left: 16px;
+		}
+
+		&__form {
+			flex-grow: 1;
+			flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;
+
+			&-contact {
+				width: 100%;
+			}
+
+			&-price {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.cart {
+		&__container {
+			padding-bottom: 48px;
+		}
+
+		&__form {
+			max-width: min-content;
+			margin-left: auto;
+			margin-right: auto;
+
+			&-price {
+				margin-top: 64px;
+			}
+		}
+
+		&__item {
+			max-height: 188px;
+			margin-left: 8px;
+			margin-right: 8px;
+
+			&-delete {
+				max-width: 11px;
+				max-height: 11px;
+			}
+
+			&-info {
+				width: 90%;
+			}
+
+			&-container {
+				padding-left: 16px;
+				padding-right: 8px;
+				padding-bottom: 12px;
+				width: 100%;
+			}
+
+			&-title {
+				margin-bottom: 24px;
+				font-size: 16px;
+				line-height: 19px;
+				width: 100%;
+			}
+
+			&-property {
+				font-size: 14px;
+				line-height: 17px;
+
+				&-color {
+					font-size: 14px;
+					line-height: 17px;
+				}
+
+				&-size {
+					font-size: 14px;
+					line-height: 17px;
+				}
+
+				&-quantity {
+					margin-left: 12px;
+				}
+			}
+		}
+
+		&__button {
+			padding-left: 8px;
+			padding-right: 8px;
+
+			&-continue {
+				font-size: 12px;
+				line-height: 14px;
+				max-width: 235px;
+				max-height: 50px;
+			}
+
+			&-clear {
+				font-size: 12px;
+				line-height: 14px;
+				max-width: 235px;
+				max-height: 50px;
+				margin-right: 8px;
+			}
+		}
+	}
 }

@@ -6,14 +6,23 @@
 
 	&__input {
 		max-width: 360px;
+
 		&-form {
 			margin-bottom: 20px;
 			border: 1px solid #a4a4a4;
 			font-weight: 300;
 			font-size: 13px;
 			line-height: 16px;
-			color: #b1b1b1;
+			// color: #b1b1b1;
+			color: #222222;
 			padding: 13px 17px;
+		}
+
+		&-form::-webkit-input-placeholder {
+			color: #b1b1b1;
+		}
+		&-form::-moz-input-placeholder {
+			color: #b1b1b1;
 		}
 
 		&-gender {
@@ -89,6 +98,7 @@
 			cursor: pointer;
 		}
 	}
+
 	&__benefit {
 		max-width: 652px;
 		font-weight: 300;
@@ -116,7 +126,34 @@
 			margin-bottom: 16px;
 		}
 	}
+
 	&__text {
 		margin-bottom: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.registration {
+		padding-right: 16px;
+		padding-left: 16px;
+		justify-content: space-between;
+
+		&__benefit {
+			font-size: 16px;
+			line-height: 19px;
+			max-width: 354px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.registration {
+		padding-right: 8px;
+		padding-left: 8px;
+		flex-direction: column;
+
+		&__input {
+			padding-bottom: 40px;
+		}
 	}
 }

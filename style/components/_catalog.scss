@@ -325,5 +325,56 @@
 			margin-left: 16px;
 			margin-right: 16px;
 		}
+
+		&__filter {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.catalog {
+		&__header {
+			padding-bottom: 72px;
+		}
+
+		&__items {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+
+		&__filter {
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.catalog {
+		&__items {
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+
+		&__filter {
+			&-text {
+				display: none;
+			}
+
+			&-left {
+				margin-right: 0;
+				max-width: max-content;
+			}
+
+			&-center {
+				margin-left: 24px;
+
+				&-list {
+					padding-left: 0;
+				}
+			}
+		}
 	}
 }

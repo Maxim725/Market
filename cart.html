@@ -23,13 +23,13 @@
 					</a>
 				</div>
 				<div class="header__item-right">
-					<a href="#" class="menu-hamburger">
+					<a href="catalog.html" class="menu-hamburger">
 						<img src="images/hamburger.svg" Alt="Меню">
 					</a>
-					<a href="#" class="icon-accaount">
+					<a href="registration.html" class="icon-account">
 						<img src="images/account.svg" Alt="Аккаунт">
 					</a>
-					<a href="#" class="cart">
+					<a href="cart.html" class="cart">
 						<img src="images/cart.svg" Alt="Корзина">
 					</a>
 					<div class="cart-count-products"></div>
@@ -53,7 +53,7 @@
 							<ul class="cart__item-properties">
 								<li class="cart__item-property">Price: <span class="price">300</span></li>
 								<li class="cart__item-property">Color:
-									<select class="cart__item-property-color" size="1" multiple required>
+									<select class="cart__item-property-color" size="1" required>
 										<option value="Red">Red</option>
 										<option value="Green">Green</option>
 										<option value="Blue">Blue</option>
@@ -62,7 +62,7 @@
 									</select>
 								</li>
 								<li class="cart__item-property">Size:
-									<select class="cart__item-property-size" size="1" multiple required>
+									<select class="cart__item-property-size" size="1" required>
 										<option value="XS">XS</option>
 										<option value="S">S</option>
 										<option value="M">M</option>
@@ -89,7 +89,7 @@
 							<ul class="cart__item-properties">
 								<li class="cart__item-property">Price: <span class="price">300</span></li>
 								<li class="cart__item-property">Color:
-									<select class="cart__item-property-color" size="1" multiple required>
+									<select class="cart__item-property-color" size="1" required>
 										<option value="Red">Red</option>
 										<option value="Green">Green</option>
 										<option value="Blue">Blue</option>
@@ -98,7 +98,7 @@
 									</select>
 								</li>
 								<li class="cart__item-property">Size:
-									<select class="cart__item-property-size" size="1" multiple required>
+									<select class="cart__item-property-size" size="1" required>
 										<option value="XS">XS</option>
 										<option value="S">S</option>
 										<option value="M">M</option>
@@ -126,11 +126,12 @@
 		<div class="cart__form-contact">
 			<h4 class="cart__heading">SHIPPING ADRESS</h4>
 			<form action="#" method="POST" class="cart__form">
-				<input type="text" placeholder="Bangladesh" class="cart__form-city">
-				<input type="text" placeholder="State" class="cart__form-state">
-				<input type="text" placeholder="Postcode / Zip" class="cart__form-postcode">
-				<button class="cart__get-quote" type="submit">GET A QUOTE</button>
-
+				<div class="cart__form-input">
+					<input type="text" placeholder="Bangladesh" class="cart__form-city">
+					<input type="text" placeholder="State" class="cart__form-state">
+					<input type="text" placeholder="Postcode / Zip" class="cart__form-postcode">
+					<button class="cart__get-quote" type="submit">GET A QUOTE</button>
+				</div>
 				<div class="cart__form-price">
 					<p class="cart__form-sub-total">SUB TOTAL <span class="price dark">900</span></p>
 					<p class="cart__form-grand-total">GRAND TOTAL <span class="price">900</span></p>

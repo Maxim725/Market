@@ -3,19 +3,6 @@
 	--bg-color-light: #ffffff;
 }
 
-@import "components/default-styles";
-@import "components/header";
-@import "components/promo";
-@import "components/menu";
-@import "components/catalog";
-@import "components/advantages";
-@import "components/subscribe";
-@import "components/contacts";
-@import "components/breadcrumbs";
-@import "components/product";
-@import "components/cart";
-@import "components/registration";
-
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -36,7 +23,7 @@
 }
 
 .menu-hamburger,
-.icon-accaount {
+.icon-account {
 	display: block;
 	margin-right: 33px;
 }
@@ -81,8 +68,48 @@
 	fill: #ef5b70;
 }
 
+.filter-svg {
+	margin-top: 4px;
+}
+
 @media (max-width: 768px) {
 	.footer {
 		padding: 24px 32px;
 	}
 }
+
+@media (max-width: 375px) {
+	.icon-account {
+		display: none;
+	}
+
+	.cart {
+		display: none;
+	}
+
+	.footer {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+	.menu-hamburger {
+		margin-right: 0;
+	}
+	.contacts {
+		margin-bottom: 24px;
+	}
+}
+
+@import "components/default-styles";
+@import "components/header";
+@import "components/promo";
+@import "components/menu";
+@import "components/catalog";
+@import "components/advantages";
+@import "components/subscribe";
+@import "components/contacts";
+@import "components/breadcrumbs";
+@import "components/product";
+@import "components/cart";
+@import "components/registration";

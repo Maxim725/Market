@@ -49,6 +49,33 @@
 
 @media (max-width: 768px) {
 	.menu {
-		padding: 20px 16px 156px;
+		padding: 20px 16px 156px 16px;
+	}
+}
+
+@media (max-width: 375px) {
+	.menu {
+		padding-bottom: 64px;
+		&__top {
+			display: block;
+			padding-bottom: 0;
+		}
+
+		&__bottom {
+			height: 110px;
+		}
+
+		&__item {
+			height: 100%;
+			margin-bottom: 32px;
+		}
+
+		&__item:not(:last-child) {
+			margin-right: 0;
+		}
+
+		&__img {
+			height: 100%;
+		}
 	}
 }

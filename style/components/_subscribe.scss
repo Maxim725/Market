@@ -1,6 +1,7 @@
 .subscribe {
 	background-image: url("../images/subscribe_background.png");
-	background-size: 100%; /* Современные браузеры */
+	background-repeat: no-repeat;
+	background-size: cover; /* Современные браузеры */
 	display: flex;
 	justify-content: space-between;
 	padding-top: 88px;
@@ -94,6 +95,10 @@
 	.subscribe {
 		flex-direction: column;
 		align-items: center;
+
+		&__right {
+			padding-right: 0;
+		}
 
 		&__heading {
 			padding-top: 48px;

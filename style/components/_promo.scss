@@ -156,3 +156,11 @@
 		}
 	}
 }
+
+@media (max-width: 375px) {
+	.promo {
+		&__content {
+			margin-top: 0;
+		}
+	}
+}

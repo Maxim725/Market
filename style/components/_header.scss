@@ -19,3 +19,21 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 768px) {
+	.header {
+		&__items {
+			margin-left: 32px;
+			margin-right: 32px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.header {
+		&__items {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+	}
+}
